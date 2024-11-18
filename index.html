@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LLM Inference Web Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍩</text></svg>"
+    />
+  </head>
+  <body>
+    <div>Model status: <span id="status">⚫️ Not started</span></div>
+    Input:<br />
+    <textarea id="input" style="height: 300px; width: 600px">
+Compose an email to remind Brett of lunch plans at noon on Saturday.</textarea
+    ><br />
+    <input type="button" id="submit" value="Get Response" disabled /><br />
+    <br />
+    Result:<br />
+    <textarea id="output" style="height: 300px; width: 600px"></textarea>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
