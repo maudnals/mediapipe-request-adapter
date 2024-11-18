@@ -21,10 +21,10 @@ const MEDIAPIPE_WASM =
     document.getElementById('status').innerText = '🟢 Model ready!';
     const inputPrompt = document.getElementById('input').value;
     const response = await llmInference.generateResponse(inputPrompt);
-    console.log(response);
+    console.info(response);
     document.getElementById('output').innerText = response;
   } catch (e) {
-    console.log(e);
+    console.error(e);
     document.getElementById('status').innerText = '🔴 Model error!';
   }
 })();
